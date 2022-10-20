@@ -9,6 +9,9 @@ const app = new Vue({
         },
         cart: [],
     },
-
-
+    methods: {
+        addToCart() {
+            this.cart.push(this.product.Subject);
+        },
+    }
 })
