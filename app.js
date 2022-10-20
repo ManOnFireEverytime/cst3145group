@@ -18,5 +18,8 @@ const app = new Vue({
         cartItemCount: function () {
             return this.cart.length || '';
         },
+        canAddToCart: function () {
+            return this.product.Space > this.cartItemCount;
+        }
     }
 })
