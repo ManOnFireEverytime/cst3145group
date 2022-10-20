@@ -13,5 +13,10 @@ const app = new Vue({
         addToCart() {
             this.cart.push(this.product.Subject);
         },
+    },
+    computed: {
+        cartItemCount: function () {
+            return this.cart.length || '';
+        },
     }
 })
